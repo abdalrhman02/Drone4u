@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drone4u - Home</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+
+        <!-- The Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+                <div class="container">
+
+                    <img src="images/logo.png" alt="logo">
+
+                    <nav>
+                        <ul>
+                            <a href="home.html"><li>Home</li></a>
+                            <a href="aboutUs.html"><li>About</li></a>
+                            <a href="store.html"><li>Store</li></a>
+                            <a href="contactUs.html"><li>Contact</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+            <div class="landing">
+                <div class="container">
+                    <div class="landing-content">
+                        <div class="txt">
+                            <h2>The future of gardening and farming starts here.</h2>
+                            <p>With "Drone4u" you can improve and upgrade your field and work faster than ever before!</p>
+                            <a href="store.html"><button>Order Now</button></a>
+                        </div>
+
+                        <div class="imgDiv">
+                            <img src="images/whiteDrone.png" alt="whiteDrone">
+                        </div>
+                    </div>
+
+                    <i class="fa-solid fa-caret-down" id="goDown" onclick="goDown(  )"></i>
+                </div>
+            </div>
+
+            
+            <div class="features">
+                <div class="container">
+                    <div class="features-content">
+                        <h2 class="title">Why would you choose us?</h2>
+                        
+                        <div class="the-features">
+                            <div class="box">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <h3>Fast Shipping</h3>
+                                <p>Shipping will take 3-5 days, so you won't have to wait long</p>
+                            </div>
+
+                            <div class="box">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <h3>Return Your Money</h3>
+                                <p>You can get your money back if any failure occurs during delivery or an error in the order</p>
+                            </div>
+
+                            <div class="box">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h3>Trust</h3>
+                                <p>Our company is certified by several science and technology institutions and centers</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <div class="container">
+                    <div class="about-content">
+                        <div class="imageDiv">
+                            <img src="images/drone2.png" alt="">
+                        </div>
+
+                        <div class="txt">
+                            <h2 class="title">What is "Drone4U" Company?</h2>
+                            <p>We are a company that aims to develop agriculture and horticulture to help all farmers work less and produce more!</p>
+                            <a href="aboutUs.html"><button>About us</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <div class="contact-content">
+                    <video autoplay muted loop>
+                        <source src="images/vid.mp4">
+                    </video>
+
+                    <div class="txt">
+                        <h2>Do you want any unique service or do you have a question?</h2>
+                        <a href="contactUs.html"><button>Contact Us</button></a>
+                    </div>
+                </div>
+               
+            </div>
+
+
+            
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <h1 class="logo">Drone4U</h1>
+
+                        <nav>
+                            <h5>All Pages</h5>
+                            <ul>
+                                <a href="home.html"><li>Home</li></a>
+                                <a href="aboutUs.html"><li>About us</li></a>
+                                <a href="store.html"><li>Store</li></a>
+                                <a href="contactUs.html"><li>Contact us</li></a>
+                                <a href="#"><li>FAQS</li></a>
+                                <a href="#"><li>Feedback</li></a>
+                            </ul>
+                        </nav>
+                        
+                        <div class="newsletter">
+                            <h5>Newsletter</h5>
+                            <p>Subscribe our newsletter and get exciting offers.</p>
+                            <form>
+                                <input type="text" placeholder="Your email is..." id="emailInp">
+                                <input type="submit" id="submitEm">
+                            </form>
+                            <p id="errMsg"></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+            <!-- This for notification when the user put here email in Newsletter -->
+            <div id="notificationDiv">
+                <div>
+                    <h2 id="notititle"></h2>
+                    <p id="txt"></p>
+                    <button id="okBtn">OK</button>
+                </div>
+            </div>
+
+
+            <button id="goUp"><i class="fa-solid fa-caret-up"></i></button>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
