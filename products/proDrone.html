@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drone4u - store</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/all.min.css">
+
+        <!-- The Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="container">
+
+                <img src="../images/logo.png" alt="logo">
+
+                <nav>
+                    <ul>
+                        <a href="../home.html"><li>Home</li></a>
+                        <a href="../aboutUs.html"><li>About</li></a>
+                        <a href="../store.html"><li>Store</li></a>
+                        <a href="../contactUs.html"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="container">
+                <div class="productView">
+                    <div class="productImgs">
+                        <img src="images/dr3-2.jpg" id="mainImg">
+                        <div id="allImgs">
+                            <img src="images/dr3-2.jpg">
+                            <img src="images/dr3-3.jpg">
+                            <img src="images/dr3-1.jpg">
+                        </div>
+                    </div>
+
+                    <div class="productInfo">
+                        
+                        <h2 class="productName">Agriculture Pro Drone</h2>
+                        <div class="review">
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p>(103) Review</p>
+                        </div>
+                        <div class="txt">
+                            <p>Agriculture Pro Drone, The most demanding, it can search in a very wide range of fields and it is equipped with all the requirements in order to fix any problem in the land, whatever it may be. And it gives you a detailed report of what you can do so that this problem does not recur again.</p>
+                        </div>
+                    
+                        <hr>
+
+                        <div class="days">
+                            <div class="price">$<p id="priceNow" data-price="50">50</p> &nbsp;-&nbsp; $<p style="text-decoration: line-through;" id="priceBefore">29</p></div>
+                            <p>How much days you want to rent it?</p>
+                            <div class="daysCount">
+                                
+                                <div>
+                                    <span id="less"> - </span>
+                                </div>
+
+                                <div>
+                                    <span id="num"> 1 </span>
+                                </div>
+
+                                <div>
+                                    <span id="more"> + </span>
+                                </div>
+
+                            </div>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <h1 class="logo">Drone4U</h1>
+
+                        <nav>
+                            <h5>All Pages</h5>
+                            <ul>
+                                <a href="home.html"><li>Home</li></a>
+                                <a href="aboutUs.html"><li>About us</li></a>
+                                <a href="store.html"><li>Store</li></a>
+                                <a href="contactUs.html"><li>Contact us</li></a>
+                                <a href="#"><li>FAQS</li></a>
+                                <a href="#"><li>Feedback</li></a>
+                            </ul>
+                        </nav>
+                        
+                        <div class="newsletter">
+                            <h5>Newsletter</h5>
+                            <p>Subscribe our newsletter and get exciting offers.</p>
+                            <form>
+                                <input type="text" placeholder="Your email is...">
+                                <input type="submit">
+                            </form>
+                            <p id="errMsg"></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+
+        <script src="../Scripts/productPageScript.js"></script>
+    </body>
+</html>
