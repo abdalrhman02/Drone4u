@@ -38,8 +38,21 @@ button {
     margin: 0 100px
 }
 
-
-
+::-webkit-scrollbar {
+    width: 7px;
+}
+   
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-color-hover)
+}
 /* --- Header Style --- */
 
 header {
@@ -82,6 +95,24 @@ header nav ul li {
     display: flex;
 }header nav ul li:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 15px 0
+    }
+
+    header .container {
+        flex-direction: column
+    }
+
+    header .container [alt="logo"] {
+        margin-right: 0;
+        margin-bottom: 5px
+    }
+    header nav ul a:hover {
+        background-color: #fff
+    }
 }
 
 /* --- Header Style END --- */
@@ -298,6 +329,26 @@ footer .container .footer-content {
 }
 
 
+@media (max-width: 835px) {
+
+    .landing .landing-content {
+        flex-direction: column;
+    }
+
+    .landing .landing-content .txt h2 {
+        font-size: 35px;
+    }
+
+    .landing .landing-content .txt p {
+        font-size: 16px;
+        line-height: 20px
+    }
+
+    .landing .landing-content .txt {
+        text-align: center;
+    }
+}
+
 #goDown {
     font-size: 40px;
     position: absolute;
@@ -325,10 +376,6 @@ footer .container .footer-content {
 .features {
     padding: 80px 0;
     text-align: center;
-}
-
-.features .container {
-
 }
 
 .features .container .features-content {
@@ -380,10 +427,6 @@ footer .container .footer-content {
     margin: 15px 0;
 }
 
-.the-features .box p {
-
-}
-
 /* Features Section END */
 
 
@@ -424,9 +467,6 @@ footer .container .footer-content {
     border: 25px solid var(--main-color-hover);
 }
 
-.about .container {
-
-}
 
 .about .container .about-content {
     display: flex;
@@ -466,9 +506,6 @@ footer .container .footer-content {
     margin: 20px 0 10px;
 }
 
-.about .container .about-content .txt button {
-
-}
 
 /* About Section END */
 
@@ -496,10 +533,6 @@ footer .container .footer-content {
     width: 100%;
     height: 500px; /* Adjust the height as needed */
     object-fit: fill;
-}
-
-.contact .contact-content source {
-
 }
 
 
@@ -554,10 +587,6 @@ footer .container .footer-content {
 .aboutUs .container {
     display: flex;
     justify-content: space-between;
-}
-
-.aboutUs .title {
-    
 }
 
 .aboutUs .txts {
@@ -622,10 +651,6 @@ footer .container .footer-content {
 
 .contactUs {
     padding: 70px 0 
-}
-
-.contactUs .container {
-
 }
 
 .contactUs .content {
@@ -701,14 +726,6 @@ footer .container .footer-content {
 .contactUs .content form .name #lName {
     width: 45%;
     margin-top: 0;
-}
-
-.contactUs .content form #em {
-
-}
-
-.contactUs .content form #sub {
-
 }
 
 .contactUs .content form #message {
@@ -808,10 +825,6 @@ footer .container .footer-content {
     padding: 80px 0
 }
 
-.products .container {
-
-}
-
 .products .products-content {
     display: flex;
     justify-content: center;
@@ -860,11 +873,6 @@ footer .container .footer-content {
     margin: 20px 0;
 }
 
-.products .products-content .card .rate ul li {
-
-    
-}
-
 .products .products-content .card .rate ul li i {
     color: rgb(240 184 32)
 }
@@ -879,3 +887,115 @@ footer .container .footer-content {
 }
 /* ------ Store page END ---- */
 
+
+
+/* Product Page */
+
+.productView {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0
+}
+
+.productImgs {
+    width: 48%
+}
+
+.productImgs #mainImg {
+    width: 23em
+}
+
+.productImgs #allImgs {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.productImgs #allImgs img {
+    width: 10em;
+    transition: 0.3s
+}
+.productImgs #allImgs img:hover {
+    transform: scale(0.9);
+    cursor: pointer
+}
+
+
+.productInfo {
+    width: 48%
+}
+
+.productInfo .productName {
+    margin: 10px 0 15px 0
+}
+
+.productInfo .review {
+    display: flex;
+}
+.productInfo .review ul {
+    display: flex;
+    margin-right: 7px
+}
+.productInfo .review ul li {
+
+}
+.productInfo .review ul li i {
+    color: rgb(240 184 32)
+}
+.productInfo .review p {
+
+}
+
+.productInfo .txt {
+    line-height: 1.3em;
+    margin: 15px 0 2.5em 0
+}
+.productInfo .txt p {
+
+}
+
+.productInfo .days {
+    margin-top: 2.5em
+}
+
+.productInfo .days p {
+    margin: 10px 0 5px 0
+}
+
+.productInfo .days .price {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productInfo .daysCount {
+    display: flex;
+    border: 2px solid #d3d3d32d;
+    width: 7em;
+    margin-bottom: 1em;
+}
+
+.productInfo .daysCount div {
+    position: relative;
+    width: 2.6em;
+    height: 2.6em;
+}
+.productInfo .daysCount div:hover {
+    background-color: #e7e7e755;
+    cursor: pointer;
+}
+
+.productInfo .daysCount div span,
+.productInfo .daysCount div p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.productInfo .daysCount p {
+    
+}
+/* Product Page END */
