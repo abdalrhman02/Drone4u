@@ -3,7 +3,6 @@
     <head>
         <title>Drone4u - Contact us</title>
         <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/all.min.css">
 
         <!-- The Font -->
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -34,19 +33,19 @@
                     <div class="content">
                         <div class="socials">
                             <div class="soc">
-                                <i class="fa-brands fa-instagram"></i>
+                                <img src="images/instagram.png" alt="">
                                 <h4>Instagram:</h4>
                                 <p>@drone4uCompany</p>
                             </div>
 
                             <div class="soc">
-                                <i class="fa-solid fa-envelope"></i>
+                                <img src="images/email.png" alt="">
                                 <h4>Email:</h4>
                                 <p>drone4u@busniess.com</p>
                             </div>
 
                             <div class="soc">
-                                <i class="fa-solid fa-phone"></i>
+                                <img src="images/phone-call.png" alt="">
                                 <h4>Phone:</h4>
                                 <p>+1236582152</p>
                             </div>
@@ -59,14 +58,23 @@
                                 <input type="text" placeholder="Last Name" id="lName">
                             </div>
                             <input type="text" placeholder="Email" id="em">
-                            <input type="text" placeholder="Subject" id="sub">
+                            <input type="text" placeholder="Subject" id="subject">
                             <input type="text" placeholder="Msg" id="message">
-                            <input type="submit" value="Send Message">
+                            <input type="submit" value="Send Message" id="submitBtn">
                         </form>
+
+                        <p id="errMsg" style="color: red; display: none">Can't be any input empty!</p>
                     </div>
                 </div>
             </div>
 
+
+            <div id="thankDiv">
+                <h2>Thanks You!</h2>
+                <p>Thank you for writing to us, we will try to respond to you as soon as possible</p>
+
+                <button id="okBtn">OK</button>
+            </div>
 
 
             <footer>
@@ -96,13 +104,24 @@
                             <p id="errMsg"></p>
                         </div>
                     </div>
-                    
+
                     <p style="text-align: center; color: #fff; margin-top: 20px;">Copyright © - 212279632_323087262_214027997_323939082</p>
                 </div>
             </footer>
+
+
+             <!-- This for notification when the user put here email in Newsletter -->
+             <div id="notificationDiv">
+                <div>
+                    <h2 id="notititle"></h2>
+                    <p id="txt"></p>
+                    <button id="okBtn">OK</button>
+                </div>
+            </div>
         </main>
+
     </body>
-    
+
     <script>
 
         let firstName = document.getElementById("fName");
