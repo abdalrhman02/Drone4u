@@ -102,4 +102,34 @@
             </footer>
         </main>
     </body>
+    
+    <script>
+
+        let firstName = document.getElementById("fName");
+        let lastName = document.getElementById("lName");
+        let email = document.getElementById("em");
+        let subject = document.getElementById("subject");
+        let message = document.getElementById("message");
+        let errorMsg = document.getElementById("errMsg");
+
+        let submitBtn = document.getElementById("submitBtn");
+        let thankDiv = document.getElementById("thankDiv");
+
+        submitBtn.onclick = (e) => {
+            e.preventDefault();
+
+            if(firstName.value == '' || lastName.value == '' || email.value == '' ||  subject.value == '' || message.value == '') {
+                errorMsg.style.display = "block"
+            } else {
+                thankDiv.style.display = "block";
+                errorMsg.style.display = "none"
+            }
+        }
+
+
+        let okBtn = document.getElementById("okBtn");
+        okBtn.onclick = () => {
+            thankDiv.style.display = "none"
+        }
+    </script>
 </html>
